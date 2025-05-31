@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>Rotary Ready Recknoner - Rotary Bengaluru Heritage North / Arun Tanksali</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
@@ -17,10 +17,15 @@
 </head>
 
 <body>
+
+	<div class="slide-header"> - </div>
+	<div class="slide-footer">(c) Rotary Bengaluru Heritage North</div>
+
 	<div class="reveal">
 		<div class="slides">
 
 			<section data-background-color=var(--RotaryRoyalBlue) data-color="#ff6677">
+				<img src="media/RotaryMBS-Simple_REV-Gold-CMYK-C.png" width="450" />
 				<h1 class="r-fit-text">Rotary Ready Reckoner</h1>
 				<h3 class="r-fit-text">Your Essential Guide to Rotary</h3>
 			</section>
@@ -289,8 +294,10 @@
 			</section>
 			<section>
 				<h3>Constitution</h3>
-				The governing documents of RI are the RI Constitution, the RI Bylaws, and the Standard Rotary Club Constitution. These documents can be amended only by the Council on Legislation. The Standard Rotaract Club Constitution can be amended only by the RI Board of Directors.
-					</hr>
+				The governing documents of RI are the RI Constitution, the RI Bylaws, and the Standard Rotary Club
+				Constitution. These documents can be amended only by the Council on Legislation. The Standard Rotaract
+				Club Constitution can be amended only by the RI Board of Directors.
+				</hr>
 			</section>
 			<section>
 				<h3>Club Bylaws<ul>PLACEHOLDER</ul>
@@ -944,7 +951,30 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
+			// Determines where controls appear, "edges" or "bottom-right"
+			controlsLayout: 'bottom-right',
 
+			// Visibility rule for backwards navigation arrows; "faded", "hidden"
+			// or "visible"
+			controlsBackArrows: 'faded',
+			slideNumber: false,
+
+			// Can be used to limit the contexts in which the slide number appears
+			// - "all":      Always show the slide number
+			// - "print":    Only when printing to PDF
+			// - "speaker":  Only in the speaker view
+			showSlideNumber: 'all',
+
+			// Use 1 based indexing for # links to match slide number (default is zero
+			// based)
+			hashOneBasedIndex: true,
+			// Number of slides away from the current that are visible
+			viewDistance: 3,
+
+			// Number of slides away from the current that are visible on mobile
+			// devices. It is advisable to set this to a lower number than
+			// viewDistance in order to save resources.
+			mobileViewDistance: 2,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});

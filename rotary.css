@@ -10,3 +10,22 @@
 --RotaryWhite: #ffffff;
 }
 
+.slide-header, .slide-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+}
+
+.slide-header {
+  top: 0;
+}
+
+.slide-footer {
+  bottom: 0;
+}
