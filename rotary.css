@@ -14,6 +14,26 @@
   color: var(--RotaryGold);
 }
 
+.bodytextsmall {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+ 
+}
+.bodytextmedium {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+ 
+}
+.bodytextlarge {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  line-height: 1.5;
+ 
+}
+
+
 .slide-header, .slide-footer {
   position: fixed;
   left: 0;
